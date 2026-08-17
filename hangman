@@ -1,0 +1,20 @@
+import random
+words = ["python","github","java", "git", "pyranos"]
+word=random.choice(words)
+
+i=[]
+for letter in word:
+   i.append(letter)
+k=1
+for letter in word:
+    guess = input("Guess letter: ", k,)
+
+    if guess == letter:
+        print("Correct")
+        k+=1
+        print ("enter letter",k )
+    else:
+        print("Wrong")
+        break
+        
+
